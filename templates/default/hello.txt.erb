@@ -1,1 +1,11 @@
 Hello, world!
+
+I am a <%= node['platform'] %> server.
+
+foo is set to <%= @foo %>.
+
+<% if node['platform'] == 'windows' %>
+
+Check your registry keys!
+
+<% end %>
